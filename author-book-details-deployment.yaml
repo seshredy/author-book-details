@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: author-book-details
+  labels:
+    app: author-book-details
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: author-book-details
+  template:
+    metadata:
+      labels:
+        app: author-book-details
+    spec:
+      containers:
+        - name: author-book-details
+          image: abbi1680/author-book-details
+          ports:
+            - containerPort: 8080
