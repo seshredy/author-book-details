@@ -40,5 +40,22 @@ pipeline {
         }
 
 
+      stage('k8s deploy')
+      {
+      steps {
+
+                      kubernetesDeploy(
+                          kubeconfigId: 'kubeconfig',
+                          configs: 'author-book-details-service.yaml',
+                          enableConfigSubstitution: true
+                      )
+                      kubernetesDeploy(
+                          kubeconfigId: 'kubeconfig',
+                          configs: 'author-book-details-deployment.yaml',
+                          enableConfigSubstitution: true
+                      )
+                  }
+      }
+
     }
 }
