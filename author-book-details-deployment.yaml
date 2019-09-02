@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: author-book-details
-          image: abbi1680/author-book-details
+          image: abbi1680/author-book-details:latest
           ports:
             - containerPort: 8080
