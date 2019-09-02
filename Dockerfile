@@ -9,3 +9,4 @@ ENTRYPOINT ["java","-jar","/book-details.jar"]
 #docker run -p 8080:8080 author-book-details
 # Git push test
 # Git push test2
+# trigger jenkins auto build :-)
