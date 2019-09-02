@@ -5,6 +5,14 @@ pipeline {
         DOCKER_IMAGE_NAME = "abbi1680/author-book-details"
     }
     stages {
+
+    stage('SCM checkout') {
+             steps {
+                cleanWs()
+                git credentialsId: 'GitHub', url: "https://github.com/seshredy/author-book-details.git"
+             }
+          }
+
         stage('Build Jar and run Unit Tests') {
             steps {
                 echo 'Running build automation'
