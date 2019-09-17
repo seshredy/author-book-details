@@ -9,7 +9,7 @@ pipeline {
     stage('SCM checkout') {
              steps {
                 cleanWs()
-                git credentialsId: 'GitHub', url: "https://github.com/seshredy/author-book-details.git"
+                git credentialsId: 'github_key', url: "https://github.com/seshredy/author-book-details.git"
              }
           }
 
