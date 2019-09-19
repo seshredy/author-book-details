@@ -16,8 +16,9 @@ public class AuthorBookController {
         AuthorBooks a3 = new AuthorBooks(3, "Spring Rest Apress",40);
         AuthorBooks a4 = new AuthorBooks(4, "Jenkins up and running",45);
         AuthorBooks a5 = new AuthorBooks(5, "Jenkins up and running v2",50);
+        AuthorBooks a6 = new AuthorBooks(6, "Jenkins up and running v3",500);
 
-        return Arrays.asList(a1, a2, a3,a4,a5);
+        return Arrays.asList(a1, a2, a3,a4,a5,a6);
 
     }
 
