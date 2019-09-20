@@ -19,6 +19,14 @@ pipeline {
                 sh './mvnw clean install package'
             }
         }
+        
+        stage('Build functional tests') {
+            steps {
+                echo 'Running build automation'
+            }
+        }
+        
+        
         stage('Build Docker Image') {
             steps {
                 script {
