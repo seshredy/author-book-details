@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: author-book-details
-          image: 048162655705.dkr.ecr.eu-west-2.amazonaws.com/author-book-details:latest
+          image: 0481626557.dkr.ecr.eu-west-2.amazonaws.com/author-book-details:latest
           ports:
             - containerPort: 8080
